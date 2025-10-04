@@ -1,0 +1,148 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Recipe Finder</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="bg-overlay"></div>
+
+  <header>
+    <div class="header-container">
+     
+      
+
+      <div class="header-left">
+        <img src="https://cdn.dribbble.com/userupload/27769142/file/original-c6ab2b37240c8e38dbd465e0e39ecaed.gif" alt="Cooking Gif">
+      </div>
+
+     
+
+      <div class="header-center">
+        <h1>🍳 Recipe Finder</h1>
+        <p class="heading">🍕 OUT OF IDEAS? 🍔</p> 
+        <p class="sub-heading">"  Just enter what you have & we will do the rest  "</p> 
+
+        <div class="search-bar">
+          <input id="ingredientInput" type="text" placeholder="Enter ingredients (e.g. chicken, broccoli)" />
+          <button id="searchBtn">Search Recipes</button>
+        </div>
+      </div>
+
+     
+      
+
+      <div class="header-right">
+        <img src="https://youthincmag.com/wp-content/uploads/2017/10/waste.png" alt="Food Waste">
+      </div>
+    </div>
+  </header>
+
+
+
+
+  <section>
+    <h2 class="results-title">✨Popular Recipes</h2>
+    
+    <div class="recipe-slider">
+      <div id="recipes" class="recipe-grid">
+
+        
+        <div class="recipe-card" data-description="Delicious pasta tossed with garlic, scallions, roasted cauliflower, and crispy breadcrumbs. A perfect weeknight comfort meal.">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRN1L1Cae-cuBv30BCCH5LRyOKTjQPdfG7FuA&s" alt="Pasta with Garlic, Scallions, Cauliflower & Breadcrumbs">
+          <div class="recipe-info">
+            <h3>Pasta with Garlic, Scallions, Cauliflower & Breadcrumbs</h3>
+            <p>Comforting pasta with crispy cauliflower and garlicky crunch.</p>
+            <button class="view-recipe-btn" data-url="https://spoonacular.com/recipes/grilled-lemon-chicken-716429">View Recipe</button>
+          </div>
+        </div>
+
+        
+        <div class="recipe-card" data-description="Fresh fish baked Greek-style with olive oil, lemon, and herbs. A light and flavorful dish ideal for dinner. Perfectly tender and juicy, seasoned with oregano and garlic. Serve with a side of roasted vegetables or a fresh Greek salad for a complete meal.">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQ2rw7jePpFHlcbFmzEXezoumH5nv0S3f-Rg&s" alt="Greek-Style Baked Fish">
+          <div class="recipe-info">
+            <h3>Greek-Style Baked Fish</h3>
+            <p>Fresh, simple, and delicious baked fish with Mediterranean flavors.</p>
+            <button class="view-recipe-btn" data-url="https://spoonacular.com/recipes/creamy-garlic-pasta-716408">View Recipe</button>
+          </div>
+        </div>
+
+        
+        <div class="recipe-card" data-description="Juicy pork and pasta tossed in a bruschetta-style mix of tomatoes, basil, and garlic. A hearty and flavorful dish perfect for family dinners. Fresh ingredients enhance the taste and aroma. Pair with a glass of red wine for a delightful meal experience.">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUt26_rB7BRTBHascb1ViV8nq_IsyDdn8MYg&s" alt="Bruschetta Style Pork & Pasta">
+          <div class="recipe-info">
+            <h3>Bruschetta Style Pork & Pasta</h3>
+            <p>Hearty pasta with pork and fresh bruschetta flavors.</p>
+            <button class="view-recipe-btn" data-url="https://spoonacular.com/recipes/fresh-vegan-salad-715538">View Recipe</button>
+          </div>
+        </div>
+
+       
+        <div class="recipe-card" data-description="Refreshing salad loaded with summer berries and greens. Light and fruity, perfect for hot days. Adds a burst of color and antioxidants to your meal. Pair with a light vinaigrette for extra flavor and freshness.">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkN35kRmRL8oDYzvwlgEe-iRqpNte_CZQDvQ&s" alt="Summer Berry Salad">
+          <div class="recipe-info">
+            <h3>Summer Berry Salad</h3>
+            <p>Light and fruity salad perfect for summer. It is packed with seasonal berries.</p>
+            <button class="view-recipe-btn" data-url="https://spoonacular.com/recipes/avocado-toast-715540">View Recipe</button>
+          </div>
+        </div>
+
+        
+        <div class="recipe-card" data-description="Noodles tossed with fresh pesto and crisp veggies for a light summer salad. Herbaceous and aromatic, with a vibrant green pesto sauce. Ideal for picnic lunches or as a side dish. Garnish with toasted pine nuts and Parmesan for extra texture and flavor.">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpWhhhUzbLR3adcaQTmulxg-8yloAR4RyYJQ&s" alt="Pesto Noodle Salad">
+          <div class="recipe-info">
+            <h3>Pesto Noodle Salad</h3>
+            <p>A refreshing summer noodle salad with pesto and fresh veggies.</p>
+            <button class="view-recipe-btn" data-url="https://spoonacular.com/recipes/summer-pesto-noodle-salad-662235">View Recipe</button>
+          </div>
+        </div>
+
+       
+        <div class="recipe-card" data-description="Tangy and nutty dressing made with fresh ginger and sesame. Brightens up any salad or roasted vegetables. Easy to make and store for weekly use. Pairs wonderfully with Asian-inspired dishes or cold noodle salads.">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoPCwvrNd_Qc685rs8b-eUP677Bojamj1KdA&s" alt="Ginger Sesame Dressing">
+          <div class="recipe-info">
+            <h3>Ginger Sesame Dressing</h3>
+            <p>Perfect dressing with Asian-inspired flavors, tangy and nutty.</p>
+            <button class="view-recipe-btn" data-url="https://spoonacular.com/recipes/ginger-sesame-dressing-644627">View Recipe</button>
+          </div>
+        </div>
+
+        
+        <div class="recipe-card" data-description="Crispy tofu seared with sesame, paired with a spicy jalapeño miso dressing. Savory and flavorful, perfect as a protein-packed meal. Great for lunch bowls or as an appetizer. Garnish with fresh herbs or sesame seeds for extra crunch.">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNWzzre6aEsDzp1Et3g97-rbxBfVyRa6Wv-w&s" alt="Sesame Seared Tofu">
+          <div class="recipe-info">
+            <h3>Sesame Seared Tofu</h3>
+            <p>Tofu with a nutty sesame crust and a spicy miso kick.</p>
+            <button class="view-recipe-btn" data-url="https://spoonacular.com/recipes/sesame-seared-tofu-with-jalapeno-miso-dressing-659757">View Recipe</button>
+          </div>
+        </div>
+
+        
+        <div class="recipe-card" data-description="Soft pistachio cupcakes topped with buttercream icing and simple sugar glaze. Nutty and sweet, with a moist, tender crumb. Perfect for celebrations or as a treat with coffee. Decorate with crushed pistachios for added texture and visual appeal.">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0YPo1X5qMean5CemHTxpE7lIZxJWlNO7imQ&s" alt="Italian Pistachio Cupcake">
+          <div class="recipe-info">
+            <h3>Italian Pistachio Cupcake</h3>
+            <p>Nutty cupcakes with creamy buttercream icing and light sugar glaze.</p>
+            <button class="view-recipe-btn" data-url="https://spoonacular.com/recipes/italian-pistachio-cupcake-with-buttercream-icing-and-simple-sugar-648192">View Recipe</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span id="closeModal" class="close">&times;</span>
+      <h3 id="modalTitle"></h3>
+      <p id="modalDescription"></p>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html> 
+
